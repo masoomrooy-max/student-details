@@ -1,0 +1,75 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff5e6;
+}
+.home-container h1 {
+  text-align: center;
+  color: #393477;
+  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* Center all student cards vertically */
+.students-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 25px 16px;
+}
+
+/* Link around each student card */
+.students-list a {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Student card */
+.student-card {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e0e3f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(50, 50, 100, 0.08);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+/* Hover effect */
+.student-card:hover {
+  transform: translateY(-3px);
+  border-color: #aaa5f5;
+  box-shadow: 0 8px 20px rgba(79, 70, 180, 0.15);
+}
+
+/* Student name */
+.student-card h2 {
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  background-color: #f0efff;
+  color: #393477;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+/* Mobile screens */
+@media (max-width: 500px) {
+  .students-list {
+    padding: 20px 14px;
+  }
+
+  .student-card {
+    padding: 15px;
+  }
+}
+
+

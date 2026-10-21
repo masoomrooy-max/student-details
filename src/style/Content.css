@@ -1,0 +1,72 @@
+
+/* Student details page */
+.details-container {
+  width: 90%;
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #e0e3f0;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(50, 50, 100, 0.10);
+  font-family: Arial, sans-serif;
+}
+
+/* Page heading */
+.details-container h1 {
+  text-align: center;
+  color: #393477;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eeeaff;
+}
+
+/* Student information */
+.details-container p {
+  padding: 13px 15px;
+  margin: 12px 0;
+  background-color: #f5f3ff;
+  border-radius: 8px;
+  color: #44445c;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* Back button */
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 11px 24px;
+  background-color: #6256d9;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.25s ease;
+}
+
+.back-link:hover {
+  background-color: #4539b5;
+}
+
+/* Mobile screen */
+@media (max-width: 500px) {
+  .details-container {
+    width: calc(100% - 24px);
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .details-container h1 {
+    font-size: 23px;
+  }
+
+  .details-container p {
+    font-size: 14px;
+    padding: 11px;
+  }
+}
